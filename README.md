@@ -49,60 +49,59 @@ Bernoulli NB achieved perfect precision (1.0) and the highest accuracy among all
 
 📈 Results
 
-Model Performance Summary
+
+---
+
+## 📈 **Results**
+
+Model Performance Summary  
 (Precision — Accuracy — F1 Score)
 
-Model	Precision	Accuracy	F1 Score
-Multinomial Naive Bayes	1.000000	0.958414	0.815451
-Bernoulli Naive Bayes	1.000000	0.965184	0.850000
-K-Nearest Neighbors	1.000000	0.905222	0.449438
-Support Vector Classifier	0.982759	0.974855	0.897638
-Logistic Regression	0.979798	0.958414	0.818565
-Gaussian Naive Bayes	0.520737	0.875242	0.636620
-Why Bernoulli Naive Bayes?
+| Model                     | Precision | Accuracy | F1 Score |
+|--------------------------|-----------|----------|----------|
+| Multinomial Naive Bayes  | 1.000000  | 0.958414 | 0.815451 |
+| **Bernoulli Naive Bayes** | **1.000000** | **0.965184** | **0.850000** |
+| K-Nearest Neighbors      | 1.000000  | 0.905222 | 0.449438 |
+| Support Vector Classifier| 0.982759  | 0.974855 | 0.897638 |
+| Logistic Regression      | 0.979798  | 0.958414 | 0.818565 |
+| Gaussian Naive Bayes     | 0.520737  | 0.875242 | 0.636620 |
 
-Achieved highest precision, meaning almost no ham messages were falsely classified as spam
+### Why Bernoulli Naive Bayes?
+- Achieved **highest precision**, meaning almost *no ham messages were falsely classified as spam*  
+- High accuracy and F1 score  
+- Efficient for binary word occurrence features (presence/absence)
 
-High accuracy and F1 score
+---
 
-Efficient for binary word occurrence features (presence/absence)
+## 🧪 **Techniques Used**
+### ✔ Data Cleaning  
+- Removal of duplicates  
+- Label encoding (ham → 0, spam → 1)
 
-🧪 Techniques Used
-✔ Data Cleaning
+### ✔ Feature Engineering  
+- Created new features:  
+  - Number of characters  
+  - Number of words  
+  - Number of sentences  
 
-Removal of duplicates
+### ✔ Preprocessing  
+- Lowercasing  
+- Tokenization  
+- Removing punctuation & special characters  
+- Removing stop words  
+- Stemming  
+- TF-IDF vectorization
 
-Label encoding (ham → 0, spam → 1)
+---
 
-✔ Feature Engineering
+## 🚀 **How to Run**
+1. Install required Python libraries:
 
-Created new features:
-
-Number of characters
-
-Number of words
-
-Number of sentences
-
-✔ Preprocessing
-
-Lowercasing
-
-Tokenization
-
-Removing punctuation & special characters
-
-Removing stop words
-
-Stemming
-
-TF-IDF vectorization
-
-🚀 How to Run
-
-Install the required Python libraries:
-
+```bash
 pip install pandas numpy scikit-learn nltk matplotlib seaborn
+
+```
+
 
 
 Open the Jupyter Notebook:
