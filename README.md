@@ -1,11 +1,11 @@
 # End-to-end_Project
 Spam Detection Classifier
-📩 SMS Spam Detection Using Machine Learning
+SMS Spam Detection Using Machine Learning
 
 A university project focused on building and evaluating machine learning models to classify SMS messages as spam or ham (not spam).
 The project compares multiple algorithms, performs exploratory data analysis (EDA), processes text data, and identifies the most effective model for spam detection.
 
-🔍 Project Overview
+Project Overview
 
 This project aims to detect spam in SMS messages using supervised machine learning techniques.
 The goal is to build a model that can accurately classify messages and minimize false positives—ensuring important legitimate messages are not incorrectly flagged as spam.
@@ -22,7 +22,7 @@ ham – legitimate message
 
 spam – unsolicited or malicious message
 
-🧠 Models Used
+Models Used
 
 The following machine learning algorithms were trained and evaluated:
 
@@ -38,7 +38,7 @@ Support Vector Classifier (SVC)
 
 Logistic Regression
 
-⭐ Best Performing Model: Bernoulli Naive Bayes
+Best Performing Model: Bernoulli Naive Bayes
 
 Bernoulli NB achieved perfect precision (1.0) and the highest accuracy among all tested models, making it the best fit for spam detection where false positives must be minimized.
 
@@ -46,11 +46,6 @@ Bernoulli NB achieved perfect precision (1.0) and the highest accuracy among all
 ├── spam_detection.ipynb     # Main notebook containing EDA, preprocessing, model training and evaluation
 ├── data.csv                 # Dataset used for the analysis and model building
 └── README.md                # Project documentation
-
-📈 Results
-
-
----
 
 ## 📈 **Results**
 
@@ -73,18 +68,18 @@ Model Performance Summary
 
 ---
 
-## 🧪 **Techniques Used**
-### ✔ Data Cleaning  
+## **Techniques Used**
+### Data Cleaning  
 - Removal of duplicates  
 - Label encoding (ham → 0, spam → 1)
 
-### ✔ Feature Engineering  
+### Feature Engineering  
 - Created new features:  
   - Number of characters  
   - Number of words  
   - Number of sentences  
 
-### ✔ Preprocessing  
+### Preprocessing  
 - Lowercasing  
 - Tokenization  
 - Removing punctuation & special characters  
@@ -94,7 +89,7 @@ Model Performance Summary
 
 ---
 
-## 🚀 **How to Run**
+## **How to Run**
 1. Install required Python libraries:
 
 ```bash
@@ -111,12 +106,12 @@ jupyter notebook spam_detection.ipynb
 
 Run all cells to perform EDA, preprocessing, training, and evaluation.
 
-🎯 Conclusion
+Conclusion
 
 Bernoulli Naive Bayes proved to be the most effective model for SMS spam classification due to its perfect precision and competitive accuracy.
 Its simplicity, speed, and strong performance make it well-suited for real-world spam filtering applications.
 
-🔮 Future Improvements
+Future Improvements
 
 Potential enhancements include:
 
